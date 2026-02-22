@@ -40,7 +40,9 @@ nav {
   text-decoration: none;
   margin-left: 16px;
   font-weight: bold;
+  white-space: nowrap; /
 }
+
 .links .cta {
   background: #e50914;
   color: white;
@@ -232,5 +234,13 @@ footer {
 @media (max-width: 600px) {
   .movie_container {
     grid-template-columns: 1fr;
+  }
+
+  .links a:not(.cta){
+    display: none;
+  }
+
+  .header h1{
+    font-size: 24px;
   }
 }
